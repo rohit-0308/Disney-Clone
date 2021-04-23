@@ -7,6 +7,13 @@ function Login(props) {
       <Content>
         <CTA>
           <CTALogoOne src="/assets/images/cta-logo-one.svg" alt="Logo 1" />
+          <SignUp>GET ALL THERE</SignUp>
+          <Description>
+            Get Premier Access to Raya and the Last Dragon for an additional fee
+            with a Disney+ subscription. As of 03/26/21 the price of Disney+ and
+            the Disney bundle will increase by Rs.99
+          </Description>
+          <CTALogoTwo src="/assets/images/cta-logo-two.png" alt="Logo 2" />
         </CTA>
         <BgImage />
       </Content>
@@ -56,10 +63,10 @@ const CTA = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align:center;
+  text-align: center;
   transition-timing-function: ease-out;
   transition: opacity 0.2s;
-  width:100%;
+  width: 100%;
 `;
 
 const CTALogoOne = styled.img`
@@ -67,6 +74,39 @@ const CTALogoOne = styled.img`
   min-height: 1px;
   margin-bottom: 12px;
   display: block;
+  width: 100%;
+`;
+
+const SignUp = styled.a`
+  font-weight: bold;
+  color: #f9f9f9;
+  background-color: #0063e5;
+  width: 100%;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  padding: 16.5px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0483ee;
+  }
+`;
+
+const Description = styled.p`
+  color: hsla(0, 0%, 95.3%, 1);
+  font-size: 11px;
+  margin: 0 0 24px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+`;
+
+const CTALogoTwo = styled.img`
+  max-width: 600px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
   width: 100%;
 `;
 
