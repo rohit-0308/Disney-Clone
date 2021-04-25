@@ -37,7 +37,8 @@ const Header = (props) => {
           alert(error.message);
         });
     } else if (userName) {
-      auth.signOut()
+      auth
+        .signOut()
         .then(() => {
           dispatch(setSignOutState());
           history.push("/");
