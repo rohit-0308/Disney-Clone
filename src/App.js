@@ -8,6 +8,7 @@ import './App.css';
 import Header from "./components/Header";
 import Login from "./components/Login"
 import Home from "./components/Home"
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/detail/:id">
+            <MovieDetails />
           </Route>
         </Switch>
       </Router>
