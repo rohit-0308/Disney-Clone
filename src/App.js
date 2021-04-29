@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Login from "./components/Login"
 import Home from "./components/Home"
 import MovieDetails from "./components/MovieDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,11 +22,14 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+            <Footer />
           </Route>
           <Route path="/detail/:id">
             <MovieDetails />
+            <Footer />
           </Route>
         </Switch>
+        
       </Router>
     </div>
   );
