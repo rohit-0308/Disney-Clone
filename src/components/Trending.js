@@ -23,11 +23,14 @@ const Trending = (props) => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 0 0 26px;
+`;
 
 const Content = styled.div`
   display: grid;
   grid-gap: 25px;
+  padding-bottom: 10px;
   gap: 25px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 
